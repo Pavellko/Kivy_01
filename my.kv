@@ -1,13 +1,16 @@
 
 <MyGrid>:
+    
     name: name1
     email: email1
 
     GridLayout:
+        
         cols:1
         size: root.width, root.height
 
         GridLayout:
+            
             cols:2
 
             Label:
@@ -25,9 +28,11 @@
                 multiline:False
 
         Button:
+            background_color: 1,0,0,1
             text:"Submit"
             on_press: root.btn()
 
 
         Label:
+            background_color: 1,1,0,1
             text: root.my_text

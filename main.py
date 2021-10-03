@@ -9,6 +9,7 @@ from kivy.properties import StringProperty, ObjectProperty
 
 
 class MyGrid(Widget):
+
     my_text = StringProperty("Hello")
     name = ObjectProperty()
     email = ObjectProperty()
@@ -16,7 +17,7 @@ class MyGrid(Widget):
         self.my_text = "Hello, " + self.name.text + " your email: " + self.email.text
 
 
-class MyApp(App): # <- Main Class
+class MyApp(App): 
     def build(self):
         return MyGrid()
 
