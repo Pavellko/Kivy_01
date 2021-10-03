@@ -1,0 +1,33 @@
+
+<MyGrid>:
+    name: name1
+    email: email1
+
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+
+        GridLayout:
+            cols:2
+
+            Label:
+                text: "Name: "
+
+            TextInput:
+                id: name1 
+                multinline:False
+
+            Label:
+                text: "Email: "
+
+            TextInput:
+                id: email1
+                multiline:False
+
+        Button:
+            text:"Submit"
+            on_press: root.btn()
+
+
+        Label:
+            text: root.my_text
